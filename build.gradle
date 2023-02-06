@@ -16,7 +16,7 @@ buildscript {
 }
 
 plugins {
-  id "org.jetbrains.kotlin.jvm" version "1.7.0"
+  id "org.jetbrains.kotlin.jvm"
   id "java-library"
   id "maven-publish"
 }
@@ -73,13 +73,6 @@ dependencies {
 
   testImplementation 'ch.qos.logback:logback-classic:1.2.3'
   testImplementation 'io.kotlintest:kotlintest-runner-junit5:3.0.4'
-}
-
-// In this section you declare where to find the dependencies of your project
-repositories {
-  // Use jcenter for resolving your dependencies.
-  // You can declare any Maven/Ivy/file repository here.
-  mavenCentral()
 }
 
 //gradle clean fatJar
